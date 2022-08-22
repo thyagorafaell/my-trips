@@ -1,5 +1,6 @@
 import { CloseOutline } from '@styled-icons/evaicons-outline'
 import LinkWrapper from 'components/LinkWrapper'
+import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import * as S from './styles'
@@ -16,6 +17,7 @@ export type PlacesTemplateProps = {
     name: string
     description: {
       html: string
+      text: string
     }
     gallery: ImageProps[]
   }
@@ -28,6 +30,10 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 
   return (
     <>
+      <NextSeo
+        title={`${place.name} - My Trips`}
+        description={place.description?.text}
+      />
       <LinkWrapper href="/">
         <CloseOutline size={32} />
       </LinkWrapper>
