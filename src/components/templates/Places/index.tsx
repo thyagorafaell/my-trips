@@ -32,7 +32,7 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 	return (
 		<>
 			<NextSeo
-				title={`${place.name} - My Trips`}
+				title={`My Trips - ${place.name}`}
 				description={place.description?.text}
 			/>
 			<LinkWrapper href={'/'}>

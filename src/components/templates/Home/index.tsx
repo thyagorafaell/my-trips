@@ -9,10 +9,6 @@ const Map = dynamic(() => import('components/Map'), { ssr: false });
 export default function HomeTemplate({ places }: MapProps) {
 	return (
 		<>
-			<NextSeo
-				title={'My Trips'}
-				description={'Lorem ipsum dolor sit amet'}
-			/>
 			<LinkWrapper href={'/about'}>
 				<InfoOutline size={32} />
 			</LinkWrapper>
