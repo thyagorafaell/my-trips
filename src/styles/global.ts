@@ -1,20 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import { ThemeType } from 'types/Theme';
 
-export const colors = {
-	highlight: '#ecb365',
-	background: '#041c32',
-	secondary: '#04293a',
-	detail: '#064663',
-	white: '#eeeeee'
-};
-
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle<{theme: ThemeType}>`
   :root {
-    --highlight: ${colors.highlight};
-    --background: ${colors.background};
-    --secondary: ${colors.secondary};
-    --detail: ${colors.detail};
-    --white: ${colors.white};
+    --highlight: ${({ theme }) => theme.highlight};
+    --background: ${({ theme }) => theme.background};
+    --secondary: ${({ theme }) => theme.secondary};
+    --detail: ${({ theme }) => theme.detail};
+    --text: ${({ theme }) => theme.text};
     --container: 100rem;
     --small: 1.5rem;
     --medium: 3rem;
@@ -34,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
   html, body, #__next {
     height: 100%;
     background: var(--background);
-    color: var(--white);
+    color: var(--text);
   }
 
   body {
