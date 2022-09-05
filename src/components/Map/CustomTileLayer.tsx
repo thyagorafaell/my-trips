@@ -1,3 +1,4 @@
+import { TileLayer as TileLayerType } from 'leaflet';
 import { memo, useEffect, useMemo, useRef } from 'react';
 import { TileLayer } from 'react-leaflet';
 import { ThemeConsumer } from 'styled-components';
@@ -18,7 +19,7 @@ type Props = {
 
 const Presentation = ({ name }: Props) => {
 	const copyrights = MAPBOX_APIKEY ? mapboxCopyrights : openMapCopyrights;
-	const ref = useRef();
+	const ref = useRef<TileLayerType>(null);
 
 	const url = useMemo(() => {
 		let stylesURL = openMapStylesURL, themeId;
@@ -33,11 +34,8 @@ const Presentation = ({ name }: Props) => {
 	}, [name]);
 
 	useEffect(() => {
-		if (!ref.current)
-			return;
-
-		ref.current.setUrl(url);
-	}, [url]);
+		ref.current?.setUrl(url);
+	}, [ref, url]);
 
 	return <TileLayer ref={ref} attribution={copyrights} url={url} />;
 };
