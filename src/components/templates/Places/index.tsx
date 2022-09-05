@@ -3,7 +3,8 @@ import LinkWrapper from 'components/LinkWrapper';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import * as S from './styles';
+import * as S from '../PageTemplate/styles';
+import * as PlaceStyles from './styles';
 
 type ImageProps = {
 	url: string
@@ -39,16 +40,14 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 			</LinkWrapper>
 			<S.Wrapper>
 				<S.Container>
-					<S.Heading>
-						<h1>{ place.name }</h1>
-					</S.Heading>
+					<S.Heading>{ place.name }</S.Heading>
 					<S.Body>
 						<div
 							dangerouslySetInnerHTML={{
 								__html: place.description.html
 							}}
 						/>
-						<S.Gallery>
+						<PlaceStyles.Gallery>
 							{ place.gallery.map(image => (
 								<Image
 									key={image.url}
@@ -58,7 +57,7 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 									width={image.width}
 								/>
 							)) }
-						</S.Gallery>
+						</PlaceStyles.Gallery>
 					</S.Body>
 				</S.Container>
 			</S.Wrapper>

@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
-export const Content = styled.section`
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
+export const Wrapper = styled.section`
+	padding: var(--large) var(--medium);
+`;
+
+export const Container = styled.section`
 	max-width: var(--container);
 	margin: auto;
 `;
@@ -17,7 +15,9 @@ export const Heading = styled.h1`
 `;
 
 export const Body = styled.main`
+	margin-bottom: var(--large);
+
 	p {
-		font-size: var(--medium);
+		margin-bottom: var(--medium);
 	}
 `;
