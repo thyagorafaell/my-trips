@@ -43,8 +43,3 @@ export const getStaticProps: GetStaticProps = async({ params }) => {
 		}
 	};
 };
-
-// getStaticPaths => serve para gerar as urls em build time /about, /trip/petropolis
-// getStaticProps => serve para buscar dados da página (props) - build time - estático
-// getServerSideProps => serve para buscar dados da página (props) - runtime - toda requisição (bundle fica no server)
-// getInitialProps => serve para buscar dados da página (props) - runtime - toda requisição (bundle também vem para o client) - hydrate

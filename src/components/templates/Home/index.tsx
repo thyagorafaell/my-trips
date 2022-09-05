@@ -1,7 +1,7 @@
 import LinkWrapper from 'components/LinkWrapper';
 import dynamic from 'next/dynamic';
 import { InfoOutline } from '@styled-icons/evaicons-outline/InfoOutline';
-import { MapProps } from 'components/Map';
+import MapProps from 'types/Map';
 import { NextSeo } from 'next-seo';
 
 const Map = dynamic(() => import('components/Map'), { ssr: false });

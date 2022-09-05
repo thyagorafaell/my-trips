@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { TileLayer } from 'react-leaflet';
 
 const MAPBOX_APIKEY = process.env.NEXT_PUBLIC_MAPBOX_APIKEY;
@@ -21,4 +22,4 @@ const CustomTileLayer = () => {
 	return <TileLayer attribution={copyrights} url={stylesURL} />;
 };
 
-export default CustomTileLayer;
+export default memo(CustomTileLayer);

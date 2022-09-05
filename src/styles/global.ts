@@ -1,10 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const colors = {
+	highlight: '#ecb365',
+    background: '#041c32',
+    secondary: '#04293a',
+    detail: '#064663',
+    white: '#eeeeee'
+}
+
 const GlobalStyles = createGlobalStyle`
   :root {
-    --highlight: #e20e8d;
-    --background: #22333b;
-    --white: #eeeeee;
+    --highlight: ${colors.highlight};
+    --background: ${colors.background};
+    --secondary: ${colors.secondary};
+    --detail: ${colors.detail};
+    --white: ${colors.white};
     --container: 100rem;
     --small: 1.5rem;
     --medium: 3rem;

@@ -1,10 +1,10 @@
-import { MapProps } from 'components/Map';
+import Map from 'types/Map';
 import HomeTemplate from 'components/templates/Home';
 import { GetPlacesQuery } from 'graphql/generated/graphql';
 import client from 'services/graphqlClient';
 import { GET_PLACES } from 'services/queries';
 
-export default function Home({ places }: MapProps) {
+export default function Home({ places }: Map) {
 	return <HomeTemplate places={places} />;
 }
 

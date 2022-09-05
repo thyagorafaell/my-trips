@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { memo } from 'react';
 import * as S from './styles';
 
 type LinkWrapperProps = {
@@ -12,4 +13,4 @@ const LinkWrapper = ({ href, children }: LinkWrapperProps) => (
 	</S.Wrapper>
 );
 
-export default LinkWrapper;
+export default memo(LinkWrapper);

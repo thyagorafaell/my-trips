@@ -1,6 +1,6 @@
 import { LatLngExpression } from 'leaflet';
 import { useRouter } from 'next/router';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 import { Marker } from 'react-leaflet';
 import Place from 'types/Place';
 
@@ -26,4 +26,4 @@ const Map = ({ place }: Props) => {
 	return <Marker key={`place-${id}`} position={position} eventHandlers={eventHandlers} title={name} />;
 };
 
-export default Map;
+export default memo(Map);
