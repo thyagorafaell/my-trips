@@ -1,6 +1,6 @@
 {
-  "name": "My trips",
-  "short_name": "My trips",
+  "name": "My Trips - thyagorafaell",
+  "short_name": "My Trips - thyagorafaell",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "background_color": "#041c32",
+  "description": "Este é o projeto realizado no curso NextJS na prática, de autoria do Willian Justen. O site foi desenvolvido utilizando NextJS e GraphQL - usando a camada free da Hygraph - por Thyago Rafael e publicado na Vercel. Neste site estarão listados alguns destinos que eu e minha família conhecemos ou temos vontade de conhecer :) Veja no Github: https://github.com/thyagorafaell/my-trips.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#041c32"
 }
