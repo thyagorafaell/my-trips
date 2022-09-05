@@ -1,6 +1,6 @@
 # My trips - thyagorafaell
 
-This is a [Next.js](https://nextjs.org/) application build in a course called [Next na prática](https://www.udemy.com/course/aprenda-nextjs-na-pratica/).
+This is a [Next.js](https://nextjs.org/) application build in a course called [NextJS na prática](https://www.udemy.com/course/aprenda-nextjs-na-pratica/).
 
 You can check the website [here](http://my-trips-green.vercel.app).
 
@@ -35,7 +35,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 ## To do list
 
 - [x] Create 1.0 version
-- [ ] Dark mode/light mode
+- [x] Dark mode/light mode
 - [ ] Improve gallery layout
 - [ ] Tests
 
