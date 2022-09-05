@@ -34,10 +34,10 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## To do list
 
-[x] Create 1.0 version
-[ ] Dark mode/light mode
-[ ] Improve gallery layout
-[ ] Tests
+- [x] Create 1.0 version
+- [ ] Dark mode/light mode
+- [ ] Improve gallery layout
+- [ ] Tests
 
 ## Deploy on Vercel
 
