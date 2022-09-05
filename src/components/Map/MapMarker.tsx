@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Map = ({ place }: Props) => {
-	const { id, location, slug, name } = place;
+	const { location, slug, name } = place;
 	const router = useRouter();
 
 	const position: LatLngExpression = useMemo(() => ([
@@ -21,9 +21,9 @@ const Map = ({ place }: Props) => {
 		click() {
 			router.push(`/place/${slug}`);
 		}
-	}), [slug]);
+	}), [router, slug]);
 
-	return <Marker key={`place-${id}`} position={position} eventHandlers={eventHandlers} title={name} />;
+	return <Marker position={position} eventHandlers={eventHandlers} title={name} />;
 };
 
 export default memo(Map);

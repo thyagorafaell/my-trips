@@ -1,5 +1,4 @@
 import { LatLngBoundsExpression } from 'leaflet';
-import { useRouter } from 'next/router';
 import { MapContainer } from 'react-leaflet';
 import Map from 'types/Map';
 import Place from 'types/Place';
@@ -18,8 +17,6 @@ const mapContainterStyle = {
 };
 
 const Map = ({ places }: Map) => {
-	const router = useRouter();
-
 	return (
 		<S.MapWrapper>
 			<MapContainer
@@ -31,7 +28,7 @@ const Map = ({ places }: Map) => {
 			>
 				{ <CustomTileLayer /> }
 				{ places?.map((place: Place) => (
-					<MapMarker place={place} />
+					<MapMarker key={place.id} place={place} />
 				)) }
 			</MapContainer>
 		</S.MapWrapper>

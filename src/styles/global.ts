@@ -2,11 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
 	highlight: '#ecb365',
-    background: '#041c32',
-    secondary: '#04293a',
-    detail: '#064663',
-    white: '#eeeeee'
-}
+	background: '#041c32',
+	secondary: '#04293a',
+	detail: '#064663',
+	white: '#eeeeee'
+};
 
 const GlobalStyles = createGlobalStyle`
   :root {
