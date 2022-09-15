@@ -9,7 +9,12 @@ export default {
 	title: projectTitle,
 	openGraph: {
 		description: projectDescription,
-		image: `${projectUrl}/img/cover.png`,
+		images: [{
+			url: `${projectUrl}/img/cover.png`,
+			width: 120,
+			height: 630,
+			alt: projectTitle
+		}],
 		locale: 'pt_BR',
 		site_name: projectTitle,
 		title: projectTitle,
