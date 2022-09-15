@@ -33,6 +33,7 @@ yarn-error.log*
 public/sw.js*
 public/workbox-*.js*
 
-# storybook
+# misc
 storybook-static
 .vercel
+*:Zone.Identifier
