@@ -41,8 +41,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang={'pt-BR'}>
 				<Head>
-					<link rel={'shortcut icon'} href={'/img/icon-512.png'} />
-					<link rel={'apple-touch-icon'} href={'/img/icon-512.png'} />
+					<link rel={'shortcut icon'} href={'/img/icon.png'} />
 					<link rel={'manifest'} href={'/manifest.json'} />
 					<link
 						rel={'stylesheet'}
