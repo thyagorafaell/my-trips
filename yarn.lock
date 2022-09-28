@@ -1072,13 +1072,16 @@
     "@graphql-codegen/plugin-helpers" "^2.6.2"
     tslib "~2.4.0"
 
-"@graphql-codegen/cli@2.12.2":
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-2.12.2.tgz#6122fbaca462b788ad7811135b3fc251b46cf6c4"
-  integrity sha512-cM2BS1FDWiZKpCFxdmhKsUzlNFs8X54yJm9djsPdz36yzXV5Sa4t6HQzr0vAX8cpc9RneBBi3rCkozRuRbBtjA==
+"@graphql-codegen/cli@2.13.1":
+  version "2.13.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-2.13.1.tgz#d68bdf42db528091ef8af2092696a04bd51bccc3"
+  integrity sha512-3+IcmqQu4olcO3ZPc+pfEPPMP+qxtjVU7w1SSLlbMU38oMY0IffApk8MNAivuVKrXoU1a8XOwt+g6m8jz9oLHA==
   dependencies:
+    "@babel/generator" "^7.18.13"
+    "@babel/template" "^7.18.10"
+    "@babel/types" "^7.18.13"
     "@graphql-codegen/core" "2.6.2"
-    "@graphql-codegen/plugin-helpers" "^2.7.1"
+    "@graphql-codegen/plugin-helpers" "^2.6.2"
     "@graphql-tools/apollo-engine-loader" "^7.3.6"
     "@graphql-tools/code-file-loader" "^7.3.1"
     "@graphql-tools/git-loader" "^7.2.1"
@@ -1089,12 +1092,12 @@
     "@graphql-tools/prisma-loader" "^7.2.7"
     "@graphql-tools/url-loader" "^7.13.2"
     "@graphql-tools/utils" "^8.9.0"
-    "@whatwg-node/fetch" "^0.4.0"
+    "@whatwg-node/fetch" "^0.3.0"
     ansi-escapes "^4.3.1"
     chalk "^4.1.0"
     chokidar "^3.5.2"
     cosmiconfig "^7.0.0"
-    cosmiconfig-typescript-loader "^4.0.0"
+    cosmiconfig-typescript-loader "4.0.0"
     debounce "^1.2.0"
     detect-indent "^6.0.0"
     graphql-config "^4.3.5"
@@ -1120,7 +1123,7 @@
     "@graphql-tools/utils" "^8.8.0"
     tslib "~2.4.0"
 
-"@graphql-codegen/plugin-helpers@^2.6.2", "@graphql-codegen/plugin-helpers@^2.7.1":
+"@graphql-codegen/plugin-helpers@^2.6.2":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.7.1.tgz#de999bdf8a1485f6f3c4c5f21cfb038e99d67e3e"
   integrity sha512-wpEShhwbQp8pqXolnSCNaj0pU91LbuBvYHpYqm96TUqyeKQYAYRVmw3JIt0g8UQpKYhg8lYIDwWdcINOYqkGLg==
@@ -2456,20 +2459,6 @@
     undici "^5.8.0"
     web-streams-polyfill "^3.2.0"
 
-"@whatwg-node/fetch@^0.4.0":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.4.tgz#9f6502177453d48b76d31f33d32dcd60afb9eb54"
-  integrity sha512-/c2u1blMAXHVXneZjVLyE0AwdRuuFpv2P3ghNz2QtpHed+25WdSkTi7XxICwuaRsl/mMgundCzSy1352rZgWPg==
-  dependencies:
-    "@peculiar/webcrypto" "^1.4.0"
-    abort-controller "^3.0.0"
-    busboy "^1.6.0"
-    form-data-encoder "^1.7.1"
-    formdata-node "^4.3.1"
-    node-fetch "^2.6.7"
-    undici "^5.8.0"
-    web-streams-polyfill "^3.2.0"
-
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -3305,7 +3294,7 @@ cosmiconfig-toml-loader@1.0.0:
   dependencies:
     "@iarna/toml" "^2.2.5"
 
-cosmiconfig-typescript-loader@^4.0.0:
+cosmiconfig-typescript-loader@4.0.0, cosmiconfig-typescript-loader@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-4.0.0.tgz#4a6d856c1281135197346a6f64dfa73a9cd9fefa"
   integrity sha512-cVpucSc2Tf+VPwCCR7SZzmQTQkPbkk4O01yXsYqXBIbjE1bhwqSyAgYQkRK1un4i0OPziTleqFhdkmOc4RQ/9g==
