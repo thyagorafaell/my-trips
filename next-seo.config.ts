@@ -16,7 +16,7 @@ export default {
 			alt: projectTitle
 		}],
 		locale: 'pt_BR',
-		site_name: projectTitle,
+		siteName: projectTitle,
 		title: projectTitle,
 		type: 'website',
 		url: projectUrl
