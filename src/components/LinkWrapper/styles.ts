@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 	cursor: pointer;
 
 	svg {
+		color: var(--text);
 		transition: color 0.3 ease-in-out;
 	}
 

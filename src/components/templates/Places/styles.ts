@@ -15,6 +15,7 @@ export const Gallery = styled.section`
 		);
 		background-size: 80rem 14rem;
 		animation: placeholderShimmer 1s linear infinite forwards;
+		position: relative !important;
 	}
 
 	@keyframes placeholderShimmer {
