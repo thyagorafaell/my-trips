@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Gallery = styled.section`
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	grid-gap: var(--medium);
 
 	img {
@@ -15,7 +16,12 @@ export const Gallery = styled.section`
 		);
 		background-size: 80rem 14rem;
 		animation: placeholderShimmer 1s linear infinite forwards;
-		position: relative !important;
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		min-width: 100%;
+		max-height: 100%;
+		min-height: 100%;
 	}
 
 	@keyframes placeholderShimmer {

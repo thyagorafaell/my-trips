@@ -53,7 +53,8 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 									key={image.url}
 									alt={place.name}
 									src={image.url}
-									fill
+									width={image.width}
+									height={image.height}
 								/>
 							)) }
 						</PlaceStyles.Gallery>
