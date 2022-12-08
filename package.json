@@ -34,7 +34,7 @@
     "styled-components": "5.3.6"
   },
   "devDependencies": {
-    "@graphql-codegen/add": "^3.1.1",
+    "@graphql-codegen/add": "^3.2.3",
     "@graphql-codegen/cli": "2.16.1",
     "@graphql-codegen/typescript": "2.8.3",
     "@graphql-codegen/typescript-operations": "2.5.10",
