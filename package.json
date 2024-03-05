@@ -24,7 +24,7 @@
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "leaflet": "^1.9.4",
-    "next": "14.1.1",
+    "next": "14.1.2",
     "next-pwa": "5.6.0",
     "next-seo": "^6.5.0",
     "nextjs-progressbar": "^0.0.16",
