@@ -6,7 +6,7 @@ import CustomTileLayer from './CustomTileLayer';
 import MapMarker from './MapMarker';
 import * as S from './styles';
 
-const maxBounds: LatLngBoundsExpression  = [
+const maxBounds: LatLngBoundsExpression = [
 	[-180, 180],
 	[180, -180]
 ];
@@ -16,7 +16,7 @@ const mapContainterStyle = {
 	width: '100%'
 };
 
-const Map = ({ places }: Map) => {
+const MapComponent = ({ places }: Map) => {
 	return (
 		<S.MapWrapper>
 			<MapContainer
@@ -26,13 +26,13 @@ const Map = ({ places }: Map) => {
 				maxBounds={maxBounds}
 				style={mapContainterStyle}
 			>
-				{ <CustomTileLayer /> }
-				{ places?.map((place: Place) => (
-					<MapMarker key={place.id} place={place} />
-				)) }
+				<CustomTileLayer />
+				{
+					places?.map((place: Place) => <MapMarker key={place.id} place={place} />)
+				}
 			</MapContainer>
 		</S.MapWrapper>
 	);
 };
 
-export default Map;
+export default MapComponent;
