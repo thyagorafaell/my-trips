@@ -8,8 +8,11 @@ const withPWA = nextPWA({
 });
 
 module.exports = withPWA({
-	swcMinify: true,
 	images: {
-		domains: ['media.graphassets.com']
+		remotePatterns: [{
+			protocol: 'https',
+			hostname: 'media.graphassets.com',
+			pathname: '**',
+		}]
 	}
 });

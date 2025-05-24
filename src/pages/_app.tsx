@@ -10,11 +10,12 @@ import ThemeSelector from 'components/ThemeSelector';
 
 function App({ Component, pageProps }: AppProps) {
 	const [isDarkMode, setIsDarkMode] = useState(true);
+	const theme = isDarkMode ? darkMode : lightMode;
 
 	return (
-		<ThemeProvider theme={isDarkMode ? darkMode : lightMode}>
+		<ThemeProvider theme={theme}>
 			<DefaultSeo {...SEO} />
-			<GlobalStyles />
+			<GlobalStyles theme={theme} />
 			<Loading />
 			<ThemeSelector isDarkMode={isDarkMode} onClick={setIsDarkMode} />
 			<Component {...pageProps} />

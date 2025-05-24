@@ -1,7 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 import { ThemeType } from 'types/Theme';
 
-const GlobalStyles = createGlobalStyle<{theme: ThemeType}>`
+declare module 'styled-components' {
+	export interface DefaultTheme {
+		name: string;
+	}
+}
+
+const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   :root {
     --highlight: ${({ theme }) => theme.highlight};
     --background: ${({ theme }) => theme.background};
