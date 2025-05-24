@@ -27,7 +27,7 @@ const Presentation = ({ name }: Props) => {
 		if (MAPBOX_APIKEY) {
 			themeId = (name === ThemeName.Dark) ? MAPBOX_DARKMODE : MAPBOX_LIGHTMODE;
 			stylesURL = `https://api.mapbox.com/styles/v1/${MAPBOX_USERID}/${themeId}/tiles/256/{z}/{x}/{y}` +
-			`?access_token=${MAPBOX_APIKEY}`;
+				`?access_token=${MAPBOX_APIKEY}`;
 		}
 
 		return stylesURL;
@@ -44,7 +44,13 @@ const CustomTileLayer = () => {
 	return (
 		<ThemeConsumer>
 			{
-				({ name }) => <Presentation name={name} />
+				theme => {
+					if (!theme) return null;
+
+					const { name } = theme;
+
+					return <Presentation name={name as ThemeName} />;
+				}
 			}
 		</ThemeConsumer>
 	);

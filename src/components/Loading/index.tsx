@@ -7,7 +7,7 @@ const Loading = () => (
 		{
 			theme => (
 				<NextNProgress
-					color={theme.highlight}
+					color={theme?.highlight}
 					startPosition={0.3}
 					stopDelayMs={200}
 					height={3}
